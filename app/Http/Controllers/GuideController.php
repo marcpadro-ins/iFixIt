@@ -15,7 +15,9 @@ class GuideController extends Controller
      */
     public function index()
     {
-        //
+        // Obtenir totes les guies
+        $guides = Guide::all();
+        return view('tutorials.index', compact('guides'));
     }
 
     /**
@@ -37,9 +39,9 @@ class GuideController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Guide $guide)
+    public function show(Guide $tutorial)
     {
-        //
+        return view('tutorials.show', compact('tutorial'));
     }
 
     /**
