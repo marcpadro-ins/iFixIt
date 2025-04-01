@@ -10,11 +10,11 @@ Aquest projecte és una aplicació Laravel orientada a gestionar tutorials i gui
 ## Imatges de l'Aplicació
 Aquestes imatges mostren algunes de les vistes principals de l'aplicació:
 - **Index:**  
-  ![Index](/storage/images/index-image.png)
+  ![Index](/storage/index.png)
 - **Show:**  
-  ![Show](/storage/images/show-image.png)
+  ![Show](/storage/show.png)
 - **Search:**  
-  ![Search](/storage/images/search-image.png)
+  ![Search](/storage/search.png)
 
 ## Rutes Principals
 Les rutes definides en el projecte són:
@@ -27,7 +27,7 @@ Les rutes definides en el projecte són:
 Per instal·lar el projecte localment, segueix els següents passos:
 1. **Clona el repositori:**
    ```bash
-   git clone https://github.com/nom-usuari/nom-del-repositori.git
+   git clone https://github.com/nmarcpadro-ins/iFixIt.git
    cd nom-del-repositori
    ```
 2. **Instal·la les dependències:**
