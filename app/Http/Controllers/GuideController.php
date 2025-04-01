@@ -100,4 +100,18 @@ class GuideController extends Controller
         $guia->steps = $steps;
         $guia->save();
     }
+
+    /**
+     * Search for guides.
+     */
+    public function search(Request $request)
+    {
+        $query = $request->input('cerca');
+        
+        $guides = Guide::where('title', 'LIKE', "%{$query}%")
+            ->orWhereJsonContains('steps', ['title' => $query])
+            ->get();
+
+        return view('tutorials.search', compact('guides', 'query'));
+    }
 }
